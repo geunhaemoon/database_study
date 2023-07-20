@@ -49,8 +49,33 @@ having
     
 -- 
 select
-	sum(student_score) as total_score 
+	count(*)
 from
-	student_tb;
+	student_tb
+where
+	student_age =20;
+    
+select
+	*
+from
+		student_tb
+order by
+	student_score asc; #오름차순 , 안적어도 기본적으로 오름차순정리alter
+    
+select
+	*
+from
+	student_tb
+order by
+	student_score desc; #내림차순 정리
+    
+select
+	*
+from
+	student_tb
+order by
+	student_score desc,
+    student_id desc;
+    
     
     
