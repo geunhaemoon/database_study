@@ -13,6 +13,7 @@ select
 	*
 from
 	user_tb
+    
 where
 	name ='상구';
     
